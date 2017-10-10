@@ -1,0 +1,11 @@
+<div class="author">
+<% if logged_in? %>
+  <%= User.find(post.user_id).name %>
+<% end %>
+</div>
+<div class="post-title">
+<%= post.title %>
+</div>
+<div class="post-body">
+<%= post.content %>
+</div>
